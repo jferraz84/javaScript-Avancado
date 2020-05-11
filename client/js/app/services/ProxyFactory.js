@@ -9,7 +9,7 @@ class ProxyFactory {
                 if (props.includes(prop) && ProxyFactory._ehFuncao(target[prop])) {
                     
                     return function(){
-                        console.log(`Interceptando ${prop}`);
+                        //console.log(`Interceptando ${prop}`);
                         Reflect.apply(target[prop], target, arguments);
                         return acao(target);
                     }
