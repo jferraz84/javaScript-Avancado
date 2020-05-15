@@ -102,6 +102,25 @@
             };
         }
 
+        // a) getConnection vai ser um me  todo static
+        // b) getConnection vai retornar um promise
+        // c) não importa o numero de vezes que eu chamar o metodo static , a conexão tem que ser a mesma
+        // d) o programador não pode chamar o close diretamente, 
+        //     ela só pode ser fexhada pela propria ConnectionFactory
+
+        ConnectionFactory
+        .getConnection()
+        .then(connection => {
+        });
+
+        ConnectionFactory
+        .getConnection()
+        .then(connection => {
+        // a conexão deve ser a mesma utilizada anteriormente 
+
+
+        });
+
     </script>
 
 </body>
