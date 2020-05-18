@@ -1,4 +1,4 @@
-class Negociacao {
+export class Negociacao {
 
     constructor(data, quantidade, valor){
         // instanciando uma nova data para que não aja perigo de ser mudado a data original
